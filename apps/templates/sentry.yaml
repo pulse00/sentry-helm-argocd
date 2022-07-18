@@ -19,13 +19,14 @@ spec:
             replicas: 1
           metrics:
             enabled: false
-          rabbitmq:
-            enabled: false
           nginx:
             enabled: true
           redis:
             replica:
               replicaCount: 1
+        rabbitmq:
+          enabled: false
+
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
