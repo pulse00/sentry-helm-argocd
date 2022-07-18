@@ -10,8 +10,8 @@ spec:
   project: default
   source:
     chart: sentry
-    repoURL: https://sentry-kubernetes.github.io/charts
-    targetRevision: 15.0.0
+    repoURL: https://pulse00.github.io/sentry-charts/index.yaml
+    targetRevision: 15.0.1-beta.0
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
