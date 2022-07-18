@@ -1,0 +1,9 @@
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/pulse00/sentry-helm-argocd.git
+    targetRevision: HEAD
+
+  destination:
+    server: https://kubernetes.default.svc
+
