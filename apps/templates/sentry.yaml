@@ -23,7 +23,7 @@ spec:
             enabled: true
           redis:
             replica:
-              replicaCount: 1
+              replicaCount: 2
         rabbitmq:
           enabled: false
 
