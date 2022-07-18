@@ -11,19 +11,16 @@ spec:
   source:
     chart: sentry
     repoURL: https://pulse00.github.io/sentry-charts
-    targetRevision: 15.0.4
+    targetRevision: 15.0.5
     helm:
       values: |-
         sentry:
-          clickhouse:
-            replicas: 1
+          web:
+            replicas: 2
           metrics:
             enabled: false
           nginx:
             enabled: true
-          redis:
-            replica:
-              replicaCount: 2
         rabbitmq:
           enabled: false
 
