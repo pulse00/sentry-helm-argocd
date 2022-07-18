@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     chart: sentry
-    repoURL: https://pulse00.github.io/sentry-charts/index.yaml
+    repoURL: https://pulse00.github.io/sentry-charts
     targetRevision: 15.0.1-beta.0
   syncPolicy:
     syncOptions:
