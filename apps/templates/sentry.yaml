@@ -5,13 +5,13 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: sonarqube
+    namespace: sentry
     server: https://kubernetes.default.svc
   project: default
   source:
     chart: sentry
     repoURL: https://pulse00.github.io/sentry-charts
-    targetRevision: 15.0.3
+    targetRevision: 15.0.4
     helm:
       values: |-
         sentry:
