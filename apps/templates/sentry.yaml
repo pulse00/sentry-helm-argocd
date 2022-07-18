@@ -23,7 +23,9 @@ spec:
             enabled: true
         rabbitmq:
           enabled: false
-
+        postgresql:
+          existingSecret: postgres-sentry
+          existingSecretKey: postgresql-password
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
