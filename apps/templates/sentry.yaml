@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: sentry
-  namespace: sentry
+  namespace: argocd
 spec:
   destination:
     namespace: sonarqube
