@@ -16,7 +16,7 @@ spec:
       values: |-
         sentry:
           web:
-            replicas: 2
+            replicas: 1
           metrics:
             enabled: false
           nginx:
