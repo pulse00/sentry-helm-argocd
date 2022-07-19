@@ -17,6 +17,17 @@ spec:
         sentry:
           web:
             replicas: 1
+            env:
+            - name: SENTRY_EMAIL_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: sentry-email
+                  key: user
+            - name: SENTRY_EMAIL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: sentry-email
+                  key: password
           metrics:
             enabled: false
           nginx:
@@ -26,6 +37,13 @@ spec:
         postgresql:
           existingSecret: postgres-sentry
           existingSecretKey: postgresql-password
+        mail:
+          backend: smtp
+          useTls: false
+          useSsl: true
+          port: 465
+          host: smtp.fastmail.com
+          from: sentry-dev@example.com
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
