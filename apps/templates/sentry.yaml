@@ -11,7 +11,7 @@ spec:
   source:
     chart: sentry
     repoURL: https://pulse00.github.io/sentry-charts
-    targetRevision: 15.0.6
+    targetRevision: 15.0.5
     helm:
       values: |-
         sentry:
